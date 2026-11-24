@@ -1,5 +1,7 @@
 # Founders Covered — CHECK BEFORE PICKING
 
+**Formatting rule (requested by Zane, 2026-11-24):** link every company, fund or organization named in the brief to its official website at its first mention, e.g. `[Sierra](https://sierra.ai)`. If you can't confirm an official site, say so and link a Crunchbase or Dealroom profile instead. Don't guess domains.
+
 Editions are spread across many `claude/happy-hypatia-*` branches, so earlier runs could not see each other and repeated founders heavily (An Wang ~20x, Madam C.J. Walker ~25x). Before picking a founder, run:
 
     git fetch origin && for b in $(git branch -r | grep -v HEAD); do git show $b:editions/founders_covered.md 2>/dev/null; done
